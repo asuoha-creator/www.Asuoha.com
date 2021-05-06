@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Asuoha.com </title>
+  <link rel="shortcut icon" href="zfavicon.png"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+ <style>
+
+* {
+  box-sizing: border-box;
+} 
+body{
+          margin: 2;
+          padding: 2;
+          font-family: sans-serif;
+        }
+        main{
+          margin: 5vh 15%;
+        }
+     
+       
+        label{
+          position: absolute;
+            width: 55px;
+            height: 25px;
+            right: 20px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 0px;
+            background-color: rgb(240, 199, 16);
+        }
+        label:before{
+          position: absolute;
+            content: '';
+            width:25px;
+            height: 20px;
+            left: 1px;
+            top: 1px;
+            border-radius: 10%;
+            background: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        label.active:before{
+            left: 24px;
+            background: rgb(255, 255, 255);
+        }
+        body.night{
+            background: rgb(59, 59, 55);
+            color: rgb(73, 7, 7)
+        }
+        @media screen and (min-width:900px) {
+          .respon{
+            display: flex;
+          }    
+   }
+
+
+body{   
+  background-color: rgb(229, 233, 236);
+}
+
+   
+div.ex23 {
+  width: 150px;
+  height: 100px;
+  background-color: rgb(8, 8, 8);
+  position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+  border-radius: 70px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+  0%   {background-color:rgb(5, 5, 5);  left:60px; top:60px; }
+  25%  {background-color:rgb(12, 12, 12); left:60px; top:60px;}
+  50%  {background-color:rgb(2, 2, 42); left:20px; top:60px;}
+  75%  {background-color:rgb(51, 3, 3); left:60px; top:160px;}
+  100% {background-image: url();}
+}
+
+
+
+h6 {   
+
+color: #ddd;
+font-size: 12px;
+
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(195, 192, 192);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ 
+
+
+  input[type=tel] {    
+    background-color: whitesmoke;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 9px solid rgb(10, 10, 36);
+  }
+ 
+  input[type=submit] {  
+    border: 9px solid rgb(8, 81, 110);
+    border-radius: 5px;
+  }
+
+
+   
+
+
+input[value=Process]{  
+  background-color:rgb(172, 156, 156);
+border: 2px solid rgb(255, 8, 0);
+padding: 1px 5px;
+float: left;
+border-top-color: rgb(7, 6, 6);
+ border-bottom-color:rgb(22, 19, 19);
+ border-left-color:rgb(5, 4, 4);
+ border-right-color:rgb(12, 10, 10);
+}
+
+
+ 
+.button1 { 
+    background-color:rgb(255, 250, 250);   
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(20, 18, 18);
+    padding:5px 5px;
+    border-radius:50px ;
+    color:rgb(29, 27, 27);
+        }
+
+        i {  
+  color:rgb(248, 224, 8); 
+  font-size: 20px;    
+animation-name: example4;
+  animation-duration: 25s;
+}
+@keyframes example {
+  0%   {color: rgb(130, 132, 133);}
+  10%   {color: rgb(163, 147, 146);}
+  25%  {color: rgb(94, 94, 10);}
+  50%  {color: rgb(59, 52, 55);}
+  100% {color: rgb(88, 36, 6);}
+}
+     
+     .button9 { 
+    background-color: rgb(71, 71, 71);  
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(245, 40, 4);
+    padding:5px 5px;
+    border-radius:85px ;
+        color:rgb(241, 10, 10);
+       text-align: left;
+    float: left;
+       animation: mymove112 7s infinite;
+  
+}
+
+@keyframes mymove112 {
+ 10% {border: 4px solid rgb(241, 13, 13)}
+ 20% {border: 4px solid rgb(146, 7, 76);}
+ 50% {border: 4px solid rgb(102, 92, 5);}
+ 60% {border: 4px solid rgb(7, 68, 138)}
+ 70% {border: 4px solid rgb(3, 66, 19);}
+ }
+
+       
+ 
+.button9:hover {  
+  background-color: rgb(150, 144, 144);
+}
+ 
+  i5 {  
+  color:rgb(238, 11, 11); 
+  font-size: 21px;    
+animation-name: example;
+  animation-duration: 25s;
+}
+
+@keyframes example {
+  0%   {color: rgb(234, 239, 241);}
+  10%   {color: rgb(219, 200, 198);}
+  25%  {color: rgb(194, 241, 25);}
+  50%  {color: rgb(230, 17, 17);}
+  100% {color: rgb(17, 235, 115);}
+}
+
+
+i:hover {  
+  color: #080808fd;  
+  font-size: 20px;
+  } 
+
+  i2:hover {  
+  color: #f1b009fd;  
+  font-size: 20px;
+  } 
+
+
+  
+h2 {  
+  width: 0px;
+  height: 0px;
+  color: #000;
+}
+
+
+  
+i6 { 
+  color: rgb(5, 5, 5);
+  width: 85px;
+height: 30px;
+left: 70px;
+font-size: 20px;
+float: left;
+}
+
+
+
+Div.ex22 {
+  background-color: rgb(29, 28, 28);
+width: 100%;
+height:250px;
+box-sizing: border-box;
+    
+    border-bottom: 20px solid  #1b0202;
+    border-radius: 30px;
+    font-size: 16px;
+       background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  animation: mymove002 5s infinite;
+ 
+}
+@keyframes mymove002  {
+ 10% { border-bottom: 20px solid  #1b0202;}
+ 20% { border-bottom: 20px solid  #f00c0c;}
+ 50% { border-bottom: 20px solid  #033f8d;}
+ 60% { border-bottom: 20px solid  #0f0f0f;}
+ 70% { border-bottom: 20px solid  #fdf7f7;}
+ 60% { border-bottom: 20px solid  #2ace0a;}
+  }
+
+
+
+ span {  
+   color: rgb(255, 255, 255); 
+height: 1px;
+font-size: 12px;
+border-radius: 10px;
+font-weight: 500;
+padding: 1px;  
+ }
+ i2 {  
+  color:  rgb(233, 172, 4);  
+  font-size: 25px;
+  animation: mymove111 5s infinite;
+  
+}
+
+@keyframes mymove {
+ 10% {color: rgb(83, 4, 4)}
+ 20% {color: rgb(107, 4, 40);}
+ 50% {color: rgb(117, 114, 5)}
+ 60% {color: rgb(6, 102, 104)}
+ 70% {color: rgb(13, 2, 24);}
+ 80% {color: rgb(3, 61, 3);}
+ 90% {color: rgb(78, 4, 41);}
+ 100% {color: rgb(70, 4, 4);}
+ }
+
+ .button1234 {   
+width: 90px;
+height: 70px;
+background-color: rgb(103, 104, 103);
+border-radius: 20px;
+float: left;
+border-bottom: 0px solid rgb(245, 7, 7);
+ border-top:    0px solid rgb(221, 221, 6);
+ border-right: 0px solid rgb(20, 20, 19);
+ border-left:   0px solid rgb(10, 10, 10);
+ animation: mymove991 s3 infinite;
+ 
+}
+
+@keyframes mymove991 {
+ 
+ 50% {background-color:  rgb(10, 191, 223);}
+
+ 100% {background-color:  rgb(15, 15, 15);}
+ 
+}
+
+
+
+
+
+img.ex1234 {   
+width: 50px;
+height: 50px;
+border-radius: 100px;
+border-bottom: 5px solid rgb(248, 244, 244);
+ border-top:    5px solid rgb(248, 248, 242);
+ border-right:  5px solid rgb(249, 252, 253);
+ border-left:   5px solid white;
+ 
+}
+
+img.ex234 {   
+width: 110px;
+height: 110px;
+background-color: rgb(250, 246, 246);
+border-radius: 45%;
+
+ animation: mymove200 5s infinite;
+ 
+}
+
+@keyframes mymove2 {
+
+  
+ 
+ 
+70%  {border-top:    10px solid rgb(1, 19, 22);}
+80% {border-right:  10px solid rgb(238, 230, 233);}
+ 100% {border-left:   10px solid rgb(247, 243, 16);}
+}
+
+
+
+    img:hover {  
+    font-size: 30px;
+background-color: orange;
+  }
+ 
+ 
+ 
+
+
+h7.h31 {  
+  color: rgb(248, 248, 246);
+  float: center;
+  }
+  
+  h7.h32 {  
+  color: rgb(231, 241, 231);
+  text-align: center; 
+  }
+  h7.h33 {  
+  color: rgb(232, 231, 245);
+  text-align: center; 
+  }
+  h7.h34 {  
+  color: rgb(245, 244, 238);
+  text-align: center; 
+  }
+  h7.h35 {  
+  color: rgb(243, 239, 239);
+  text-align: center; 
+  }
+  h7.h36 {  
+  color: rgb(241, 15, 15);
+  text-align: center; 
+  }
+
+  h7.h37 {  
+  color: rgb(233, 11, 11);
+  text-align: center; 
+  }
+  h7.h38 {  
+  color: rgb(248, 8, 8);
+  text-align: center; 
+  }
+  h7.h39 {  
+  color: rgb(252, 249, 249);
+  text-align: center; 
+  }
+  h7.h310 {  
+  color: rgb(241, 11, 11);
+ text-align: center;
+   }
+  h7 {   
+    text-align: center;
+  }
+     
+ 
+  
+ 
+
+   #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  height: 50px;
+   width: 100%;
+  font-size: 20px;
+    border: 7px solid rgb(228, 188, 9);
+
+  border-radius: 30px;
+  background-color: white;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(8, 8, 8, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1000px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.footer {   
+background-color: aliceblue;
+color: aliceblue;
+width: 100%;
+height: 200px;
+bottom: 0px;
+text-align: center;
+position: fixed;
+left: 0px;
+background-color: rgb(241, 10, 10);
+animation: mymove115 7s infinite;
+  
+}
+
+@keyframes mymove115 {
+  10% {background-color:  rgb(255, 250, 250);}
+  40% {background-color:  rgb(3, 80, 7);}
+  80% {background-color:  rgb(71, 33, 23);}
+    }
+
+
+</style>
+</head>
+</head>
+<body onload="myFunction()" style="margin:0;">
+   <div class="ex22">
+
+
+
+
+
+ 
+
+  
+
+
+   
+  
+<p>
+      <p> 
+        <table> 
+          <tr>  
+             <th> <h7 class="h31">A</h7> </th>
+             <th><h7 class="h32">s</h7></th>
+              <th> <h7 class="h33">u</h7></th>
+               <th> <h7 class="h34">o</h7></th>
+                <th> <h7 class="h35">h</h7></th>
+                <th> <h7 class="h36">a</h7></th>
+                <th> <h7 class="h37">.</h7></th>
+                <th> <h7 class="h38">c</h7></th>
+                <th> <h7 class="h39">o</h7></th>
+                <th> <h7 class="h310">m</h7></th>
+               <th> <i class="fas fa-shopping-cart"></i></th>
+               </tr>   
+    </table>
+    
+   
+    
+  
+  
+
+  
+     
+    <table>
+      <tr>
+        <label  id="dark-change"></label>
+<p>       <th>     <a href="voice html.html">   <button class="button9">  <i class="fas fa-microphone-alt"></i>   </button> </a> </p>  </th> 
+<p><th>  <a href="vedio html.html">   <button class="button9"> <i class="fas fa-video"></i>        </button> </a> </p>  </th> 
+  <p><th> <a href="camera html.html"> <button class="button9"> <i class="fas fa-camera"></i>          </button>  </a></p> </th> 
+    <p><th> <a href="text html.html">   <button class="button9"><i class="fas fa-envelope"></i>      </button> </a></p> </th> 
+      <th>
+        <img  class="ex234" src=" " id="img" alt=""/> 
+      </th> 
+      <table>                    
+  <tr>                
+             
+
+  </th>
+  </tr>
+  <tr>
+ 
+</tr>
+</table>
+
+
+</div. ex12 > 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;open   </span>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+
+  <th> <input  type="file" 
+    id="capture" 
+    accept="image/*" 
+    capture 
+    multiple />
+      
+
+
+     <table>     
+      <tr>    
+  
+        
+                    <th> <p><a href="Asuoha zoom.html"> <button class="button1234" >    <i2 class="fab fa-telegram"></i2>   <h6>Asuoha zoom</h6> </button>  </p></th></a>
+            <th> <p><a href="Asuoha news.html">  <button class="button1234" >    <i2 class="fas fa-newspaper"></i2>   <h6> Asuoha news </h6></button>      </p>  </th></a>
+                    <th> <p> <a href="asuoha taxi.html"> <button class="button1234" >   <i2 class="fas fa-taxi"></i2><i2 class="fas fa-shipping-fast"></i2>      <h6>  Asuoha taxi & delivery </h6></button>  </p></th></a>
+                </tr>
+                 <tr>
+              <th> <p> <a href="hosting.html">    <button class="button1234" >    <i2 class="fas fa-server"></i2>  <h6>  Asuoha hosting </h6></button>   </p></th></a>
+            <th> <p><a href="asuoha ads.com.html">  <button class="button1234" >     <i2 class="fas fa-ad"></i2>   <h6>   Asuoha ads </h6> </button>  </p></th></a>
+            <th> <p><a href="asuoha investment.html">  <button class="button1234" >   <i2 class="fas fa-comments-dollar"></i2><i2 class="fas fa-piggy-bank"></i2>   <h6>Asuoha invest </h6></button> </p></th></a>
+       
+          </tr>
+          <tr>
+            <th> <p> <a href="Asuoha service&item.html">  <button class="button1234" >   <i2 class="fas fa-users"></i2> <i2 class="fas fa-box-open"></i2>   <h6>srvices&item</h6>   </button>  </p></th></a>
+              
+            <th> <p> <a href="fdt.html">  <button class="button1234" > <i2 class="fas fa-baby"></i2>         <h6> Asuoha foundation</h6>   </button>  </p></th></a>
+             
+            <th> <p><a href="learn.html">  <button class="button1234" >     <i2 class="fas fa-user-shield"></i2>     <h6>skill learn/share</h6>   </button>  </p></th></a>
+            
+           </tr>
+  <tr>
+    <th> <p> <a href="Asuoha.com.html">  <button class="button1234" >   <i2 class="fas fa-home"></i2>   <h6> reload</h6>   </button>  </p></th></a>
+ 
+    <th> <p>    <a href="index.html.html"> <button class="button1234" >    <i2 class="fas fa-user-cog"></i2>  <h6> log out</h6>   </button>  </p></th></a>
+     
+    <th> <p>   <a href="company fill.html"> <button class="button1234" >    <i2 class="fas fa-cloud-upload-alt"></i2>  <h6>up load</h6>   </button>  </p></th></a>
+    </tr>
+    <tr>
+    </table>
+
+        </div>
+
+
+
+       
+
+
+         <div class="footer">
+
+       <h4>    buy and sell goods and  Services here on Asuoha.com  </h4>  
+
+
+          <h6> <p>Copyright © 2021 Asuoha.com. All rights reserved</p></h6>
+          
+      </div>
+      
+          <script>  
+              
+           document.addEventListener('DOMContentLoaded', (ev)=>{
+                let form = document.getElementById('myform');
+                //get the captured media file
+                let input = document.getElementById('capture');
+                
+                input.addEventListener('change', (ev)=>{
+                    console.dir( input.files[0] );
+                    if(input.files[0].type.indexOf("image/") > -1){
+                        let img = document.getElementById('img');
+                        img.src = window.URL.createObjectURL(input.files[0]);
+                    }
+                  
+                    else if(input.files[0].type.indexOf("audio/") > -1 ){
+                        let audio = document.getElementById('audio');
+                        audio.src = window.URL.createObjectURL(input.files[0]);
+                    }
+                    else if(input.files[0].type.indexOf("video/") > -1 ){
+                        let video = document.getElementById('video');
+                        video.src=window.URL.createObjectURL(input.files[0]);
+                    }
+                    
+                    
+                })
+                
+            })
+       
+         
+             var myVar;
+             
+             function myFunction() {
+               myVar = setTimeout(showPage, 300);
+             }
+             
+             function showPage() {
+               document.getElementById("loader").style.display = "none";
+               document.getElementById("myDiv").style.display = "block";
+             }
+             
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+
+
+        </script>    
+ </div>
+ 
+ 
+
+  
+ 
+ 
+
+    
+
+          
+      </body>
+          </html>
+
+
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href=""> 
+
+
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {   
+background-color: aliceblue;
+color: rgb(5, 66, 119);
+width: 100%;
+height: 70px;
+bottom: 0px;
+text-align: center;
+position: fixed;
+left: 0px;
+border: 5px solid rgb(17, 19, 11);
+border-radius: 20px;
+background-color: rgb(247, 241, 241);
+}
+
+
+img.ex234 {  
+  padding: 4px;
+ border-radius: 200px; 
+ border: 8px solid rgb(241, 71, 41);
+
+   width: 150px;
+   
+   color: rgb(245, 17, 17);
+  background-color:rgb(12, 215, 241);
+  height: 100px;
+  
+}
+
+
+
+   
+  input[type=file]{   
+    width: 100px;
+    height: 20px;
+    border-radius: 50px;
+background-color: rgb(20, 18, 18);
+border: 2px solid rgb(250, 38, 10);
+padding: 5px 5px;
+  right:  88px;
+ 
+ 
+  } 
+ 
+
+
+  
+
+  div.ex1 {  
+    background-color: rgb(153, 161, 124);
+height: 260px;
+    width: 100%;
+    border: 5px solid rgb(5, 157, 245);
+    border-radius: 50px;
+    
+  }
+  
+
+
+.button00 {  
+height: 100px;
+width: 100px;
+background-color: rgb(17, 219, 238);
+border-radius: 90px;
+
+border: 5px solid rgb(243, 19, 11);
+
+
+}
+
+
+h1 {  
+color: rgb(226, 45, 21);
+font: italic bold 40px/30px georgia, serif;
+
+}
+
+
+
+
+
+
+h4 {  
+  color: aliceblue;
+  font-size: 19px;
+  right: 460px;
+  font: italic bold 19px/30px georgia, serif;
+
+  animation: mymove2 7s infinite;
+}
+
+@keyframes mymove2 {
+ 10% {color: rgb(235, 224, 224)}
+ 20% {color: rgb(233, 212, 222);}
+ 50% {color: rgb(228, 205, 4);}
+ 60% {color: rgb(13, 178, 219)}
+ 70% {color: rgb(227, 224, 235);}
+ 80% {color: rgb(10, 8, 8);}
+ 90% {color: rgb(250, 246, 249);}
+ 100% {color: rgb(58, 241, 12);}
+ 120% {color: rgb(124, 121, 121);}
+}
+
+
+body { 
+  background-color: rgb(184, 185, 183);
+  animation: mymove12 3s infinite;
+}
+
+h6 {  
+  color: aliceblue;
+}
+
+
+
+
+</style>
+</head>
+<body>
+ <div class="ex1">
+<h4>Asuoha security</h4>
+
+ 
+
+  
+  <table>
+    <tr>            
+   <th> <input  type="file" 
+    id="capture" 
+    accept="image/*" 
+    capture 
+    multiple />
+       
+  </th>
+  </tr>
+  <tr>
+      <th>
+     <img  class="ex234" src="" id="img" alt=""/> 
+  </th> 
+  
+   
+
+
+
+  </tr>
+  </table>
+  
+ </div>
+
+
+
+
+
+
+        
+  
+
+
+<table>
+  <tr> 
+
+<th>    <a href="voice html.html"> <button class="button00">     voice </button><i class="fas fa-microphone-alt"></i>  </a>   </th> 
+ <th>       <a href="vedio html.html">  <button class="button00">  vedio</button>  <i class="fas fa-video"></i>              </a>   </th> 
+  </tr> 
+  <tr> 
+ 
+</tr> 
+</table>  
+
+
+
+
+
+
+<script>  
+              
+  document.addEventListener('DOMContentLoaded', (ev)=>{
+       let form = document.getElementById('myform');
+       //get the captured media file
+       let input = document.getElementById('capture');
+       
+       input.addEventListener('change', (ev)=>{
+           console.dir( input.files[0] );
+           if(input.files[0].type.indexOf("image/") > -1){
+               let img = document.getElementById('img');
+               img.src = window.URL.createObjectURL(input.files[0]);
+           }
+         
+           else if(input.files[0].type.indexOf("audio/") > -1 ){
+               let audio = document.getElementById('audio');
+               audio.src = window.URL.createObjectURL(input.files[0]);
+           }
+           else if(input.files[0].type.indexOf("video/") > -1 ){
+               let video = document.getElementById('video');
+               video.src=window.URL.createObjectURL(input.files[0]);
+           }
+           
+           
+       })
+       
+   })
+
+
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 300);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+</script>    
+
+
+
+<div class="footer">   
+  Copyright © 2021  asuoha security.com. All rights reserved
+</div>
+
+
+</body>
+</html> 
+
+
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>asuoha ads</title>
+  <link rel="shortcut icon" href="zfavicon.png"> 
+
+<style>
+
+
+.footer {   
+background-color: aliceblue;
+color: aliceblue;
+width: 100%;
+height: 70px;
+bottom: 0px;
+text-align: center;
+position: fixed;
+left: 0px;
+border: 5px solid rgb(56, 55, 55);
+border-radius: 20px;
+background-color: rgb(235, 20, 20);
+}
+
+
+img.ex234 {  
+  padding: 4px;
+ border-radius: 90px; 
+ border: 3px solid rgb(189, 144, 144);
+ float: right  80px;
+   width: 100px;
+   color: rgb(175, 38, 38);
+  background-color:rgb(245, 245, 240);
+  height: 100px;
+  ;
+}
+   
+  input[type=file]{   
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+background-color: rgb(20, 18, 18);
+border: 2px solid rgb(233, 232, 226);
+padding: 5px 5px;
+ float: right  80px;
+ 
+  } 
+ 
+ 
+
+
+
+  div {  
+    background-color: aliceblue;
+height: 30px;
+    width: 300px;
+    border-radius: 40px;
+  }
+
+
+.button00 {  
+height: 70px;
+width: 60px;
+background-color: rgb(236, 220, 82);
+border-radius: 50px;
+text-align: center;
+border: 5px solid rgb(114, 111, 111);
+}
+
+
+h1 {  
+color: rgb(226, 45, 21);
+font: italic bold 40px/30px georgia, serif;
+
+}
+
+h3 {  
+  color: aliceblue;
+
+}
+
+body { 
+  background-color: rgb(144, 147, 150);
+  animation: mymove12 3s infinite;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div>   
+<h1>Asuoha ads</h1>
+</div>
+
+
+  
+  
+
+  
+ 
+
+
+
+ 
+  <table>
+  <tr>            
+    <form action="https://formsubmit.co/asuohacompany@gmail.com" method="POST">
+ <th> <input  type="file" 
+  id="capture" 
+  accept="image/*" 
+  capture 
+  multiple />
+     
+</th>
+</tr>
+<tr>
+<th>
+   <img  class="ex234" src=" " id="img" alt=""/> 
+</th> 
+</tr>
+<h3>what kind of ads do you went</h3>
+
+
+  <table>
+  <tr> 
+
+<th>    <a href="voice html.html"> <button class="button00">     voice </button><i class="fas fa-microphone-alt"></i>  </a>   </th> 
+ <th>       <a href="vedio html.html">  <button class="button00">  vidio</button>  <i class="fas fa-video"></i>              </a>   </th> 
+  <th>       <a href="camera html.html">  <button class="button00"> camera </button><i class="fas fa-camera"></i>          </a>  </th> 
+  
+   <th>     <a href="text html.html">  <button class="button00">  text</button><i class="fas fa-phone-volume"></i></a></th> 
+</tr> 
+</table>  
+</div>
+
+
+
+
+
+
+
+
+
+<script>  
+              
+  document.addEventListener('DOMContentLoaded', (ev)=>{
+       let form = document.getElementById('myform');
+       //get the captured media file
+       let input = document.getElementById('capture');
+       
+       input.addEventListener('change', (ev)=>{
+           console.dir( input.files[0] );
+           if(input.files[0].type.indexOf("image/") > -1){
+               let img = document.getElementById('img');
+               img.src = window.URL.createObjectURL(input.files[0]);
+           }
+         
+           else if(input.files[0].type.indexOf("audio/") > -1 ){
+               let audio = document.getElementById('audio');
+               audio.src = window.URL.createObjectURL(input.files[0]);
+           }
+           else if(input.files[0].type.indexOf("video/") > -1 ){
+               let video = document.getElementById('video');
+               video.src=window.URL.createObjectURL(input.files[0]);
+           }
+           
+           
+       })
+       
+   })
+
+
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 300);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+</script>    
+
+
+
+<div class="footer">   
+  Copyright © 2021 asuoha ads.com. All rights reserved
+</div>
+
+
+</body>
+</html> 
+
+
+
